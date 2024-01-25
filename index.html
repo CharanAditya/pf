@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charan Aditya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 id="logo">
+            <span class="first-let">C</span>haran
+            <span class="first-let">A</span>ditya.
+          </h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Machine Learning Enthusiast</p>
+          <h1>Hi, I 'm <span>Charan</span> <br />Aditya from Malaysia.</h1>
+        </div>
+      </div>
+    </div>
+    <!------------------------about---------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/cropped-charan3greenbg.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi, magnam, odio itaque voluptates libero voluptatum
+              veritatis aut cupiditate harum rem ex eveniet ipsum obcaecati
+              pariatur repudiandae sit alias! Quisquam perferendis aut sit alias
+              voluptas voluptate earum, rerum ipsum, similique pariatur est
+              possimus quibusdam nihil, soluta adipisci vero quis aspernatur
+              labore.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Machine learning</span><br />Model Development , NLP,
+                  Computer Vision
+                </li>
+                <li><span>Web Development</span><br />Front-end</li>
+                <li>
+                  <span>Data Structures & Algorithms</span><br />Data
+                  Structures, Algorithm Design, Complexity Analysis
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />B.Tech CSE Core at VIT,
+                  Vellore<br />CGPA : 9.92
+                </li>
+                <li>
+                  <span>2017 - 2022</span><br />Chinmaya International
+                  Residential School<br />
+                  Grade : 98.2% (12th topper)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Program Representative of the
+                  <br />CSE Core department
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------services------------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Servies</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              dolor provident adipisci modi consequuntur debitis. Id laborum
+              accusamus fugiat dolorum qui sint explicabo pariatur vitae. Ad,
+              in! Obcaecati, culpa quaerat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              dolor provident adipisci modi consequuntur debitis. Id laborum
+              accusamus fugiat dolorum qui sint explicabo pariatur vitae. Ad,
+              in! Obcaecati, culpa quaerat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>Data Analysis</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              dolor provident adipisci modi consequuntur debitis. Id laborum
+              accusamus fugiat dolorum qui sint explicabo pariatur vitae. Ad,
+              in! Obcaecati, culpa quaerat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------contact------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>charanaditya@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9600759073</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i> </a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your E-mail" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/0e26c2525e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
